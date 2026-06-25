@@ -1,0 +1,114 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; font-family: 'Poppins', sans-serif; 
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #28282a;
+    height: 12vh;
+    ;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: #f5f2f2;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.logo{
+    font-size: 15px;
+    color: #fff;
+}
+
+li a:hover{
+    color: #fbff0c;
+    font-weight: 600;
+    border-bottom: 1px solid #fffffb;
+    font-size: 18px;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    background-color: #fffffd;
+    color: #121111;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #fbff0c;
+    color: #121111;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn a{
+    text-decoration: none;
+    color: #121111;
+    font-weight: 500;
+}
+
+#Accueil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-image: url('images/resto2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #edf03b;
+    text-align: center;
+}
+
+#Accueil h1{
+    font-size: 3rem;
+    color: #fffffd;
+}
+
+#Accueil .btn{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+@media (max-width: 1024px) {
+    #Accueil {
+        height: 98vh;
+    }
+
+    #Accueil h1 {
+        font-size: 2.4rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #Accueil {
+        height: 100vh;
+    }
+
+    #Accueil h1 {
+        font-size: 2.8rem;
+        padding: 0 1rem; 
+    }
+
+}
