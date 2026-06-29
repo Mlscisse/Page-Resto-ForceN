@@ -12,7 +12,16 @@ header{
     padding: 1rem 2rem;
     background-color: #28282a;
     height: 12vh;
-    ;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
 
 nav ul{
@@ -21,6 +30,20 @@ nav ul{
     gap: 1rem;
 }
 
+nav .offres{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ff0c0c;
+    font-weight: 600;
+}
+
+nav .offres a:hover{
+    color: #ff0c0c;
+    font-weight: 600;
+    border-bottom: 1px solid #fffffb;
+    font-size: 18px;
+}
 a{
     text-decoration: none;
     color: #f5f2f2;
@@ -29,8 +52,25 @@ a{
 }
 
 .logo{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     font-size: 15px;
     color: #fff;
+    position: relative;
+}
+
+.logo span{
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    background-color: #0c0101c3;
+    color: #fbff0c;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fbff0c;
 }
 
 li a:hover{
@@ -42,7 +82,7 @@ li a:hover{
 
 .btn {
     padding: 0.5rem 1rem;
-    background-color: #fffffd;
+    background-color: #fbff0c;
     color: #121111;
     border: none;
     border-radius: 5px;
@@ -51,16 +91,36 @@ li a:hover{
 }
 
 .btn:hover {
-    background-color: #fbff0c;
+    background-color: #fffffb;
     color: #121111;
     font-size: 18px;
     font-weight: bold;
+    transform: scale(1.05) rotate(1deg);
 }
 
 .btn a{
     text-decoration: none;
     color: #121111;
     font-weight: 500;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
 }
 
 #Accueil{
@@ -88,6 +148,146 @@ li a:hover{
     gap: 10px;
 }
 
+#menu{
+    padding: 2rem;
+    background-color: #121111;
+    color: #fff;
+    text-align: center;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+    align-items: center;
+    border-top: #edf03b solid 1px;
+    border-radius: 8px;
+}
+
+.description {
+    color: #edf03b;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 1rem;
+    height: 100%;
+    width: 100%;
+    background-color: #28282a;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    
+}
+
+.item img{
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.item h3{
+    font-size: 20px;
+}
+
+.item p{
+    font-size: 15px;
+    color: #949090;
+    text-align:start;
+    
+}
+
+.item hr {
+    width: 100%;
+    border: #191919 solid 0.5px;
+}
+
+.plats-principal{
+    padding: 5px;
+    border-radius: 50px;
+    font-size: 10px;
+    background-color:hsla(248, 81%, 65%, 0.22);
+    color:#9185e4ee;
+}
+
+.plats-principal-boisson{
+    padding: 5px;
+    border-radius: 50px;
+    font-size: 10px;
+    background-color:hsla(94, 81%, 65%, 0.51);
+    color:hsl(94, 81%, 65%);
+}
+
+.plats-principal-dessert{
+    padding: 5px;
+    border-radius: 50px;
+    font-size: 10px;
+    background-color:hsla(0, 95%, 25%, 0.53);
+    color:hsl(0, 72%, 65%);
+}
+.menu-price{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    
+}
+
+
+.menu-price span{
+    font-weight: bold;
+    font-size: 1em;
+    color: #edf03b;
+}
+
+.btn-menu-price {
+   padding: 0.5em 1em;
+   background-color:#232323;
+   border-radius: 5px;
+   transition: o.3s ease;
+}
+
+.btn-menu-price:hover{
+    font-weight: bolder;
+    background-color: #edf03b;
+    color: #121111;
+}
+
+.item:hover{
+    border-top: #edf03b solid 0.5px;
+    border-bottom: #edf03b solid 0.5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transform: scale(1.05);
+}
+
+.plats{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.plats i{
+    color:#9185e4ee;
+    font-size: 1.5rem;
+}
+
+#boisson{
+    color:hsl(94, 81%, 65%);
+    font-size: 1.5rem;
+}
+
+#dessert{
+    color:hsla(0, 58%, 51%, 0.53);
+    font-size: 1.5rem;
+}
+
+
 
 
 @media (max-width: 1024px) {
@@ -100,15 +300,86 @@ li a:hover{
     }
 }
 
-
 @media (max-width: 768px) {
+
     #Accueil {
         height: 100vh;
     }
 
     #Accueil h1 {
         font-size: 2.8rem;
-        padding: 0 1rem; 
+        padding: 0 1rem;
+    }
+
+    header {
+        padding: 1rem 2rem;
+        height: 10vh;
+    }
+
+    .logo span {
+        display: none;
+    }
+
+    .logo h2 {
+        font-size: 2rem;
+    }
+
+    .hamburger {
+        display: flex;
+        align-items: center;
+    }
+
+    nav {
+        height: 100vh;
+        width: 60%;
+        background-color: #28282ab8;
+        position: fixed;
+        top: 10vh;
+        right: -100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.2s ease-in-out;
+    }
+
+    .menu-toggle:checked ~ nav {
+        right: 0%;
+    }
+
+
+    nav ul {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+
+
+    nav.active{
+        right: 0;
+    }
+   
+    header .btn {
+        display: none;
+    }
+
+    .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+    align-items: center;
+    }
+
+    .menu-toggle:checked ~ .hamburger span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .menu-toggle:checked ~ .hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-toggle:checked ~ .hamburger span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
     }
 
 }

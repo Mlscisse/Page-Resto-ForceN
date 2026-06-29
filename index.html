@@ -11,15 +11,29 @@
 <body>
     <header>
         <div class="logo">
+            <span></span>
             <h2>Etoile du Sud</h2>
         </div>
+
+        <input type="checkbox" name="menu-toggle" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class=" hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
         <nav>
             <ul>
                 <li><a href="#Accueil">Accueil</a></li>
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#about">Galerie</a></li>
                 <li><a href="#contact">À propos</a></li>
+                <li><a href="#contact">Témoignages clients</a></li>
             </ul>
+            <div class="offres">
+                <i class="fa-solid fa-gift"></i>
+                <a href="#contact">Offres Spéciales</a>
+            </div>
         </nav>
         <div class="btn">
             <i class="fa-solid fa-phone-volume"></i>
@@ -36,19 +50,108 @@
                 <a href="#contact">RESERVER UNE TABLE</a>
             </div>
         </section>
-        <!-- Ajoutez d'autres sections ici 
+     
         <section id="menu">
+
             <h2>Notre Menu</h2>
-            <p>Explorez notre sélection de plats savoureux.</p>
+            <p class="description">Explorez notre sélection de plats savoureux.</p>
+            
+            <div class="grid-container">
+                <div class="item">
+                    <span class="plats-principal">Plats principal</span>
+                    <img src="images/Menu-Thiep.jpg" alt="Plat 1">
+                    <div class="plats">
+                        <i class="fa-solid fa-bowl-rice"></i>
+                        <h3>Thiéboudienne</h3>
+                    </div>
+                    <p>C'est un riz au poisson mijoté. Le riz cuit directement dans le bouillon de légumes et de poisson, ce qui lui donne une texture savoureuse et une belle couleur rouge ou blanche.</p>
+                    <hr>
+                    <div class="menu-price">
+                        <span>5000 FCFA</span>
+                        <a href="#contact" class="btn-menu-price">Commander</a>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <span class="plats-principal">Plats principal</span>
+                    <img src="images/Menu-Ndole.avif" alt="Plat 1">
+                    <div class="plats">
+                        <i class="fa-solid fa-bowl-rice"></i>
+                        <h3>Ndolé aux Crevettes</h3>
+                    </div>
+                    <p>Feuilles de ndolé longuement mijotées avec crevettes fraîches et pâte d'arachides, dans une sauce onctueuse aux saveurs d'une richesse incomparable.</p>
+                    <hr>
+                    <div class="menu-price">
+                        <span>8000 FCFA</span>
+                        <a href="#contact" class="btn-menu-price">Commander</a>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <span class="plats-principal">Plats principal</span>
+                    <img src="images/Menu-pastilla au pigeon.jpg" alt="Plat 1">
+                    <div class="plats">
+                        <i class="fa-solid fa-bowl-rice"></i>
+                        <h3>Pastilla au Pigeon</h3>
+                    </div>
+                    <p>Ragoût royal de poulet aux épices berbéré d'une complexité aromatique envoûtante. Servi sur l'injera, ce pain fermenté acidulé, avec des œufs durs fondants qui boivent la sauce cramoisie.</p>
+                    <hr>
+                    <div class="menu-price">
+                        <span>7000 FCFA</span>
+                        <a href="#contact" class="btn-menu-price">Commander</a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <span class="plats-principal-boisson">Boissons</span>
+                    <img src="images/Menu-Bissap royal.jpg" alt="Plat 1">
+                    <div class="plats">
+                       <i id="boisson" class="fa-solid fa-martini-glass"></i>
+                        <h3>Bissap Royal</h3>
+                    </div>
+                    <p>Infusion de fleurs d'hibiscus séchées d'un rouge rubis intense, délicatement sucrée et relevée de gingembre frais. Servie glacée avec une feuille de menthe, elle rafraîchit avec une élégance naturelle.</p>
+                    <hr>
+                    <div class="menu-price">
+                        <span>1500 FCFA</span>
+                        <a href="#contact" class="btn-menu-price">Commander</a>
+                    </div>
+                </div>
+
+                 <div class="item">
+                    <span class="plats-principal-boisson">Boissons</span>
+                    <img src="images/Menu-Bouye.jpg" alt="Plat 1">
+                    <div class="plats">
+                       <i id="boisson" class="fa-solid fa-martini-glass"></i>
+                        <h3>Bouye</h3>
+                    </div>
+                    <p>Breuvage onctueux extrait de la pulpe du baobab, surnommé "l'arbre de vie". Aux notes douces de vanille et d'agrumes, légèrement crémeux et naturellement sucré — aussi nutritif qu'exquis.</p>
+                    <hr>
+                    <div class="menu-price">
+                        <span>1800 FCFA</span>
+                        <a href="#contact" class="btn-menu-price">Commander</a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <span class="plats-principal-dessert">Dessert</span>
+                    <img src="images/Menu-Chocolat.webp" alt="Plat 1">
+                    <div class="plats">
+                        <i id="dessert"class="fa-solid fa-cake-candles"></i>
+                        <h3>Fondant au Chocolat</h3>
+                    </div>
+                    <p>Un cœur coulant de chocolat noir Grand Cru 70%, à la croûte légèrement craquante et au cœur fondant qui se révèle à la première cuillère — intense, presque amer, d'une profondeur veloutée.</p>
+                    <hr>
+                    <div class="menu-price">
+                        <span>3000 FCFA</span>
+                        <a href="#contact" class="btn-menu-price">Commander</a>
+                    </div>
+                </div>
+               
+            
+            </div>
+    
+            
         </section>
-        <section id="about">
-            <h2>Galerie</h2>
-            <p>Jetez un œil à nos photos et à notre ambiance.</p>
-        </section>
-        <section id="contact">
-            <h2>À propos</h2>
-            <p>Contactez-nous pour plus d'informations ou pour réserver une table.</p>
-        </section>
-    -->
+    
 </body>
 </html>
