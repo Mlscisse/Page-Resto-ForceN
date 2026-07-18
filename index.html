@@ -11,7 +11,9 @@
 <body>
     <header>
         <div class="logo">
-            <span></span>
+            <span>
+                <img src="images/logo 2.gif" alt="">
+            </span>
             <h2>Etoile du Sud</h2>
         </div>
 
@@ -26,9 +28,9 @@
             <ul>
                 <li><a href="#Accueil">Accueil</a></li>
                 <li><a href="#menu">Menu</a></li>
-                <li><a href="#about">Galerie</a></li>
-                <li><a href="#contact">À propos</a></li>
-                <li><a href="#contact">Témoignages clients</a></li>
+                <li><a href="#Galerie">Galerie</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="#">Témoignages clients</a></li>
             </ul>
             <div class="offres">
                 <i class="fa-solid fa-gift"></i>
@@ -37,17 +39,18 @@
         </nav>
         <div class="btn">
             <i class="fa-solid fa-phone-volume"></i>
-            <a href="#contact">Réserver</a>
+            <a href="#Reservation">Réserver</a>
         </div>
     </header>
 
     <main>
+
         <section id="Accueil">
             <h1>Bienvenue à Etoile du Sud</h1>
             <p>Découvrez notre cuisine raffinée et nos plats délicieux.</p>
             <div class="btn">
                 <i class="fa-solid fa-utensils"></i>
-                <a href="#contact">RESERVER UNE TABLE</a>
+                <a href="#Reservation">RESERVER UNE TABLE</a>
             </div>
         </section>
      
@@ -55,6 +58,133 @@
 
             <h2>Notre Menu</h2>
             <p class="description">Explorez notre sélection de plats savoureux.</p>
+
+            <div class="sous-menus">
+
+                <div class="boissons">
+                    <div class="sous-menu-Boissons">
+                        
+                        <input type="checkbox" id="modal-popup" name="modal-popup" class="modal-popup">
+                        <label class="modal-label" for="modal-popup">Boissons</label>
+
+                        <div class="PopUp">
+                            <div class="PopUp-elements">
+                                <div class="PopUp-header">
+                                    <i class="fa-solid fa-martini-glass-citrus"></i>
+                                    <h2 class="PopUp-h2">Boissons</h2>
+                                </div>
+                                
+                                <label for="modal-popup" class="close-btn">X</label>
+
+                                <div class="grid-elements">
+
+                                    <div class="grid-p">
+                                        <img src="./images/Menu-Bissap royal.jpg" alt="Bissap">
+                                        <h2 class="grid-h2">Bissap (Jus d'Hibiscus)</h2>
+                                        <p class="grid-h2-p">Une infusion d'hibiscus glacée, parfumée à la menthe et à la fleur d'oranger. </p>
+                                        <hr>
+                                        <div class="grid-p-price">
+                                            <P class="price-p">1200 Fcfa</P>
+                                            <a href="" class="btn">commander</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="grid-p">
+                                        <img src="./images/Menu-Bouye.jpg" alt="bouy">
+                                        <h2 class="grid-h2">Jus de Bouye </h2>
+                                        <p class="grid-h2-p">Élaboré à partir du fruit du baobab, ce jus onctueux et velouté possède un goût unique. </p>
+                                        <hr>
+                                        <div class="grid-p-price">
+                                            <P class="price-p">1200 Fcfa</P>
+                                            <a href="" class="btn">commander</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="grid-p">
+                                        <img src="./images/Menu-jus de tamarin.webp" alt="bouy">
+                                        <h2 class="grid-h2">Jus de Tamarin </h2>
+                                        <p class="grid-h2-p">Issu de la pulpe du tamarin, ce jus présente une saveur complexe, intensément fruitée. </p>
+                                        <hr>
+                                        <div class="grid-p-price">
+                                            <P class="price-p">1200 Fcfa</P>
+                                            <a href="" class="btn">commander</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            
+
+                        </div>
+                    </div>
+                </div>
+                
+                  <div class="Dessert">
+                    <div class="sous-menu-Desserts">
+                        
+                        <input type="checkbox" id="modal-popup-dessert" name="modal-popup-dessert" class="modal-popup-dessert">
+                        <label class="modal-label" for="modal-popup-dessert">Desserts</label>
+
+                        <div class="PopUp-dessert">
+                            <div class="PopUp-elements-dessert">
+                                <div class="PopUp-header">
+                                    <i class="fa-solid fa-ice-cream"></i>
+                                    <h2 class="PopUp-h2">Dessert</h2>
+                                </div>
+                                
+                                <label for="modal-popup-dessert" class="close-btn">X</label>
+
+                                <div class="grid-elements">
+
+                                    <div class="grid-p">
+                                        <img src="./images/Menu-Chocolat.webp" alt="chocolat">
+                                        <h2 class="grid-h2">Fondant au Chocolat</h2>
+                                        <p class="grid-h2-p">Un grand classique indémodable pour les amoureux de cacao. Ce gâteau se distingue par sa croûte craquante. </p>
+                                        <hr>
+                                        <div class="grid-p-price">
+                                            <P class="price-p">1200 Fcfa</P>
+                                            <a href="" class="btn">commander</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="grid-p">
+                                        <img src="./images/Menu-Le Mille-Feuille Croustillant Vanille et Caramel.png" alt="bouy">
+                                        <h2 class="grid-h2">Le Mille-Feuille</h2>
+                                        <p class="grid-h2-p">Un dessert tout en texture et en finesse. Il se compose de fines couches de pâte feuilletée inversée, caramélisées. </p>
+                                        <hr>
+                                        <div class="grid-p-price">
+                                            <P class="price-p">1200 Fcfa</P>
+                                            <a href="" class="btn">commander</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="grid-p">
+                                        <img src="./images/Menu-Le Pavlova aux Fruits Exotiques et Mangue.jpg" alt="Le Pavlova aux Fruits Exotiques et Mangue">
+                                        <h2 class="grid-h2">Le Pavlova </h2>
+                                        <p class="grid-h2-p">Un dessert d'une élégance rare, à la fois léger et festif. Il repose sur une base de meringue blanche. </p>
+                                        <hr>
+                                        <div class="grid-p-price">
+                                            <P class="price-p">1200 Fcfa</P>
+                                            <a href="" class="btn">commander</a>
+                                        </div>
+                                    </div>
+
+                                    
+
+                                </div>
+
+                            </div>
+
+                            
+
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
             
             <div class="grid-container">
                 <div class="item">
@@ -149,9 +279,188 @@
                
             
             </div>
-    
+        
             
         </section>
+        
+        <section id="Galerie">
+        <!-- ? 
+            <section class="slider-container">
+
+                <section class="slider"> 
+
+                    
+
+                     <div class="slide one">
+                         <img src="/images/slide-4.jpg" alt="Image 1">
+                         <p>Derrière chaque assiette de l'Étoile du Sud se cache la passion et le savoir-faire de notre Cheffe. Formée aux techniques de la grande cuisine et profondément attachée à ses racines, elle marie avec élégance les saveurs du terroir africain et le raffinement gastronomique. Dans sa cuisine, chaque plat raconte une histoire : celle d'un héritage culinaire célébré avec créativité, exigence et générosité. Son sourire en dit long — ici, on cuisine avec le cœur.
+                         </p>
+                    </div>
+                        
+                    <div class="slide two">
+                         <img src="/images/slide-5.jpg" alt="Image 2">
+                         <p>Notre équipe de chefs passionnés travaille chaque jour pour créer des expériences culinaires inoubliables. Leur dévouement à la qualité et à l'innovation fait de chaque repas une célébration de la culture et de la tradition.</p>
+                     </div>
+
+                    <div class="slide three">
+                        <img src="/images/slide-6.jpg" alt="Image 3">
+                        <p>Notre salle allie l'élégance contemporaine au raffinement des matières nobles : boiseries chaleureuses, lustres dorés, marbre immaculé et motifs graphiques inspirés des tissus africains. Baignée de lumière et ouverte sur la ville, elle offre une atmosphère feutrée où chaque dîner devient un moment privilégié. Une invitation au voyage, entre luxe discret et hospitalité authentique.
+                         </p>
+                    </div>
+
+                    <div class="slide four">
+                        <img src="/images/slide-7.jpg" alt="Image 3">
+                        <p>Dès votre arrivée, notre équipe vous reçoit avec le sourire et la générosité de la teranga. À l'Étoile du Sud, chaque hôte est accueilli comme un invité d'honneur. Attentive et passionnée, notre équipe veille au moindre détail pour faire de votre visite une expérience inoubliable, du premier sourire jusqu'au dernier au revoir. Ici, l'hospitalité n'est pas un service : c'est un art de vivre.
+                         </p>
+                    </div>
+
+                    <div class="slide five">
+                        <img src="/images/slide-3.jpg" alt="Image 3">
+                        <p>Notre équipe de chefs passionnés travaille chaque jour pour créer des expériences culinaires inoubliables. Leur dévouement à la qualité et à l'innovation fait de chaque repas une célébration de la culture et de la tradition.
+                         </p>
+                    </div>
+
+                    <div class="slide six">
+                        <img src="/images/slide-4.jpg" alt="Image 1">
+                        <p>Derrière chaque assiette de l'Étoile du Sud se cache la passion et le savoir-faire de notre Cheffe. Formée aux techniques de la grande cuisine et profondément attachée à ses racines, elle marie avec élégance les saveurs du terroir africain et le raffinement gastronomique. Dans sa cuisine, chaque plat raconte une histoire : celle d'un héritage culinaire célébré avec créativité, exigence et générosité. Son sourire en dit long — ici, on cuisine avec le cœur.</p>
+                    </div>
+
+                </section>
+            
+            </section>
+         -->
+            <div class="description-galerie">
+                <div class="galerie-titre">
+                    <span></span>
+                    <h2>Galerie</h2>
+                </div>
+                <h2 class="galerie-sous-titre">L'Émotion en images</h2>
+                <p>Découvrez notre galerie de photos mettant en valeur nos plats, notre ambiance et nos événements spéciaux. Chaque image raconte une histoire de saveurs et de moments mémorables.</p>
+            </div>
+
+            <div class="gallery-container">
+
+                <div class="gallery-grid">
+
+                    <div class="gallery-imgage">
+                        <img src="/images/slide-3.jpg" alt="">
+                        <p">gallery-imgage</p>
+                    </div>
+
+                    <div class="gallery-imgage">
+                        <img src="/images/slide-4.jpg" alt="">
+                    </div>
+
+                    <div class="gallery-imgage">
+                        <img src="/images/slide-7.jpg" alt="">
+                    </div>
+
+                    <div class="gallery-imgage">
+                        <img src="/images/slide-5.jpg" alt="">
+                    </div>
+
+                    <div class="gallery-imgage">
+                        <img src="/images/slide-1.avif" alt="">
+                    </div>
+
+                    <div class="gallery-imgage">
+                        <img src="/images/slide-6.jpg" alt="">
+                    </div>
+
+                </div>
+            
+            </div>
+
+        </section>
+
+        <section id="Reservation">
+
+            <div class="reservation-titre">
+                <h2> <span>Réservez</span> <br>votre instant d'exception !</h2>
+                <p>Une table dressée pour vous, une ambiance chaleureuse et une expérience culinaire inoubliable qui n'attend que votre venue. Assurez-vous d’avoir la meilleure place en réservant dès maintenant.</p>
+              
+            </div>
+
+            <div class="forms">
+
+                <div class="forms-header">
+                    <h2>Remplissez le formulaire !</h2>
+                </div>
+
+                <div class="name">
+
+                    <form>
+
+                    <label for="prenom">Prenom<span>*</span></label>
+                    <input type="text" id="prenom" placeholder="Moussa" name="Prenom" required>
+
+                    <label for="nom">Nom<span>*</span></label>
+                    <input type="text" id="nom" placeholder="Diallo" name="Prenom" required>
+
+                    <label for="telephone">Tel<span>*</span></label>
+                    <input type="tel" id="telephone"  placeholder="77 800 00 00" name="Prenom" required>
+
+                    
+                    <label for="mail">E-mail</label>
+                    <input type="email" id="mail" placeholder="@gmail.com" name="Prenom">
+
+                    <label for="nombre-personnes">Nombre de presonnes<span>*</span></label>
+                    <select name="nombre personnes" id="nombre-personnes" required>
+                        <optgroup label="Nombre de personnes">
+                        <option value="1"> 1 personne</option>
+                        <option value="2"> 2 personnes</option>
+                        <option value="3"> 3 personnes</option>
+                        <option value="4"> 4 personnes</option>
+                        <option value="5"> 5 personnes</option>
+                        <option value="+10"> + 10 personnes</option>
+                        </optgroup>
+                    </select>
+
+                    <label for="date">Date<span>*</span></label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="heure">Heure<span>*</span></label>
+                    <select name="heure" id="heure" required>
+                        <optgroup label="Dejeuner">
+                            <option value="12h00">12h00</option>
+                            <option value="12h30">12h30</option>
+                            <option value="13h00">13h00</option>
+                            <option value="13h30">13h30</option>
+                            <option value="14h00">14h00</option>
+                        </optgroup>
+
+                        <optgroup label="Diner">
+                            <option value="19h00">19h00</option>
+                            <option value="20h30">20h30</option>
+                            <option value="21h00">21h00</option>
+                            <option value="22h30">22h30</option>
+                            <option value="00h00">00h00</option>
+                        </optgroup>
+
+                    </select>
+
+                    <label for="comment">Message</label>
+                    <textarea name="comment" id="comment" cols="6" rows="6" placeholder="Votre message..."></textarea>
+
+                
+                    <input type="submit" id="submit" class="submit" >
+
+                    </form>
+                
+
+                </div>
+
+                
+            </div>
+
+            
+
+        </section>
+
+
+        
+    </main>
+    
     
 </body>
 </html>
